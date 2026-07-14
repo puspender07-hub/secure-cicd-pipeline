@@ -30,8 +30,8 @@ jobs:
       - name: Run Tests
         run: pytest
 
-      - name: Code Quality Check
-        run: flake8 .
+      -- name: Code Quality Check
+  run: flake8 --exclude=.venv,venv,__pycache__,.git .
 
       - name: Security Scan
         run: bandit -r .
