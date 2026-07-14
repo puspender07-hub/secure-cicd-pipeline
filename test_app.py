@@ -7,5 +7,5 @@ def test_home_page():
 
     assert response.status_code == 200
     assert b"Welcome to Secure CI/CD Pipeline Project!" in response.data
-    
+
 
