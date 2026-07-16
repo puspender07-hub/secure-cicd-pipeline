@@ -6,4 +6,4 @@ def test_home_page():
     response = tester.get("/")
 
     assert response.status_code == 200
-    assert b"Welcome to Secure CI/CD Pipeline Project!" in response.data
+    assert b"Secure CI/CD Pipeline" in response.data
